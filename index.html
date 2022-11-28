@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Ghost Encryptor</title>
+        <link rel="shortcut icon" href="./images/Logoico.ico">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="topbox">
+                <img class="logo" src="./images/LYNTransparente.png" alt="logo">
+                <h1 class="titulo">Encriptador</h1>
+            </div>
+        </header>
+        <main>
+            <section class="areasTexto">
+                <div class="area-entrada">
+                    <textarea name="texto-entrada" class="textImput" placeholder="Escriba aquí"  pattern="[a-z]"></textarea>
+                    <input type="button" class="botones" id="encriptar"  value="Encriptar" onclick="validarTexto(); encriptarTexto()">
+                    <input type="button" class="botones" id="desencriptar" value="Desencriptar" onclick="desencriptarTexto()">
+                </div>    
+                <div class="area-salida">
+                    <textarea name="texto-salida" class="textOutput" placeholder="Resultado" disabled></textarea>  
+                    <input type="button" class="botones" id="copiar" value="Copiar" onclick="copiarTexto()">        
+                </div>    
+            </section>   
+        </main>
+        <footer>
+            <div class="footeritems ">
+                <img src="./images/LogoTransparente.png" alt="logo">
+                <p>by Facu</p>
+            </div>
+        </footer>
+
+        <script src="./js/encriptar.js"></script>
+    </body>
+</html>
