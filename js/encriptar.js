@@ -4,7 +4,7 @@ const textoEncriptado = document.querySelector(".textOutput");
 //La funcion siguiente es la encargada de VALIDAR el texto introducido
 function validarTexto(){
     let textoValidado = textoEncriptar.value;
-    let condicion = textoValidado.match(/^[a-z]*$/);
+    let condicion = textoValidado.match(/^[a-z ]*$/);
 
         if (!condicion || condicion.length === 0){
             
